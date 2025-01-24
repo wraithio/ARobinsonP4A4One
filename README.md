@@ -14,9 +14,9 @@ Requirements:
         Utilize Tailwind CSS for styling and layout, ensuring a cohesive and responsive design across all pages.
 ---
 
-github [here](https://github.com/wraithio/ARobinsonRPSLS-Front)
+github [here](https://github.com/wraithio/ARobinsonP4A4One)
 
-vercel [here](https://a-robinson-rpsls-front.vercel.app/)
+vercel [here](https://a-robinson-p4-a4-one.vercel.app/)
 
 ### Peer Review by: 
 **Comments:**  
