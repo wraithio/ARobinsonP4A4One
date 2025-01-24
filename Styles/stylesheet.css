@@ -73,4 +73,18 @@ input{
     input{
         font-size: 36px;
     }
+    #titleText{
+        margin: 2rem 0rem;
+    }
+}
+
+@media screen and (max-width: 440px) {
+    b{
+        font-size: 28px;
+    }
+
+    #titleText{
+        text-align: center;
+        line-height: 120%;
+    }
 }

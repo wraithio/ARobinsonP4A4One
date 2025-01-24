@@ -377,7 +377,7 @@
     --default-mono-font-variation-settings: var(
       --font-mono--font-variation-settings
     );
-    --breakpoint-xs: 30rem;
+    --breakpoint-xs: 15rem;
     --breakpoint-3xl: 120rem;
   }
 }
@@ -690,8 +690,8 @@
   }
   .container {
     width: 100%;
-    @media (width >= 30rem) {
-      max-width: 30rem;
+    @media (width >= 15rem) {
+      max-width: 15rem;
     }
     @media (width >= 40rem) {
       max-width: 40rem;
@@ -714,8 +714,8 @@
   }
   .container\! {
     width: 100% !important;
-    @media (width >= 30rem) {
-      max-width: 30rem !important;
+    @media (width >= 15rem) {
+      max-width: 15rem !important;
     }
     @media (width >= 40rem) {
       max-width: 40rem !important;
@@ -1814,9 +1814,6 @@
   .p-4 {
     padding: calc(var(--spacing) * 4);
   }
-  .p-5 {
-    padding: calc(var(--spacing) * 5);
-  }
   .p-6 {
     padding: calc(var(--spacing) * 6);
   }
@@ -2567,69 +2564,100 @@
       outline-style: none;
     }
   }
-  .xs\:block {
-    @media (width >= 30rem) {
-      display: block;
-    }
-  }
-  .xs\:flex {
-    @media (width >= 30rem) {
-      display: flex;
-    }
-  }
   .xs\:hidden {
-    @media (width >= 30rem) {
+    @media (width >= 15rem) {
       display: none;
     }
   }
   .xs\:w-2\/3 {
-    @media (width >= 30rem) {
+    @media (width >= 15rem) {
       width: calc(2/3 * 100%);
     }
   }
   .xs\:w-\[15rem\] {
-    @media (width >= 30rem) {
+    @media (width >= 15rem) {
       width: 15rem;
     }
   }
   .xs\:w-full {
-    @media (width >= 30rem) {
+    @media (width >= 15rem) {
       width: 100%;
     }
   }
   .xs\:grid-cols-2 {
-    @media (width >= 30rem) {
+    @media (width >= 15rem) {
       grid-template-columns: repeat(2, minmax(0, 1fr));
     }
   }
   .xs\:grid-rows-5 {
-    @media (width >= 30rem) {
+    @media (width >= 15rem) {
       grid-template-rows: repeat(5, minmax(0, 1fr));
     }
   }
   .xs\:flex-col {
-    @media (width >= 30rem) {
+    @media (width >= 15rem) {
       flex-direction: column;
     }
   }
   .xs\:justify-center {
-    @media (width >= 30rem) {
+    @media (width >= 15rem) {
       justify-content: center;
     }
   }
   .xs\:justify-start {
-    @media (width >= 30rem) {
+    @media (width >= 15rem) {
       justify-content: flex-start;
     }
   }
   .xs\:gap-4 {
-    @media (width >= 30rem) {
+    @media (width >= 15rem) {
       gap: calc(var(--spacing) * 4);
     }
   }
+  .xs\:gap-6 {
+    @media (width >= 15rem) {
+      gap: calc(var(--spacing) * 6);
+    }
+  }
+  .xs\:gap-8 {
+    @media (width >= 15rem) {
+      gap: calc(var(--spacing) * 8);
+    }
+  }
   .xs\:text-center {
-    @media (width >= 30rem) {
+    @media (width >= 15rem) {
       text-align: center;
+    }
+  }
+  .sm\:container {
+    @media (width >= 40rem) {
+      width: 100%;
+      @media (width >= 15rem) {
+        max-width: 15rem;
+      }
+      @media (width >= 40rem) {
+        max-width: 40rem;
+      }
+      @media (width >= 48rem) {
+        max-width: 48rem;
+      }
+      @media (width >= 64rem) {
+        max-width: 64rem;
+      }
+      @media (width >= 80rem) {
+        max-width: 80rem;
+      }
+      @media (width >= 100rem) {
+        max-width: 100rem;
+      }
+      @media (width >= 120rem) {
+        max-width: 120rem;
+      }
+    }
+  }
+  .sm\:mx-auto {
+    @media (width >= 40rem) {
+      margin-inline: auto;
     }
   }
   .md\:mt-0 {
@@ -2640,11 +2668,6 @@
   .md\:block {
     @media (width >= 48rem) {
       display: block;
-    }
-  }
-  .md\:flex {
-    @media (width >= 48rem) {
-      display: flex;
     }
   }
   .md\:hidden {
@@ -2731,11 +2754,6 @@
       display: block;
     }
   }
-  .lg\:flex {
-    @media (width >= 64rem) {
-      display: flex;
-    }
-  }
   .lg\:hidden {
     @media (width >= 64rem) {
       display: none;
@@ -2744,6 +2762,11 @@
   .lg\:w-1\/2 {
     @media (width >= 64rem) {
       width: calc(1/2 * 100%);
+    }
+  }
+  .lg\:w-1\/6 {
+    @media (width >= 64rem) {
+      width: calc(1/6 * 100%);
     }
   }
   .lg\:w-auto {
@@ -2799,6 +2822,11 @@
   .lg\:p-0 {
     @media (width >= 64rem) {
       padding: calc(var(--spacing) * 0);
+    }
+  }
+  .lg\:text-end {
+    @media (width >= 64rem) {
+      text-align: end;
     }
   }
   .lg\:text-left {
