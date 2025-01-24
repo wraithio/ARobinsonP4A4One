@@ -1,0 +1,76 @@
+@font-face {
+    font-family: 'Kumbh Sans';
+    src: url(/Assets/Fonts/KumbhSans-Light.ttf);
+}
+@font-face {
+    font-family: 'Kumbh Sans-Bold';
+    src: url(/Assets/Fonts/KumbhSans-Regular.ttf);
+}
+
+body{
+    font-family: 'Kumbh Sans', Arial, Helvetica, sans-serif;
+    color: white;
+}
+
+b{
+    font-family: 'Kumbh Sans-Bold';
+}
+i{
+    padding-top: 1.25rem;
+}
+
+h1{
+    font-size: 84px;
+}
+
+h2{
+    font-size: 48px;
+}
+
+h3{
+    font-size: 36px;
+}
+
+h4{
+    font-size: 28px;
+}
+
+.github{
+    width: 50%;
+}
+
+footer{
+    padding: 2rem 0rem;
+}
+
+.max-w-screen-xl{
+    max-width: 1536px;
+}
+
+input{
+    font-size: 48px;
+    margin: 2rem 0rem;
+}
+
+#accordion-collapse{
+    margin: 2rem 0rem;
+
+}
+
+@media screen and (max-width: 775px) {
+    h2{
+        font-size: 36px;
+    }
+
+    h3{
+        font-size: 28px;
+    }
+    
+    .github{
+        width: 100%;
+    }
+
+    input{
+        font-size: 36px;
+    }
+}
