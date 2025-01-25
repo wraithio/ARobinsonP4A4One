@@ -121,7 +121,7 @@ function myFunction(x) {
   } else {
     for(let i = 0; i < modeBtns.length;i++)
       {
-        modeBtns[i].href = "#"
+        modeBtns[i].href = "javascript:;"
         modeBtns[i].className = "border-2 border-solid rounded-xl hover:bg-white";
         modeText[i].className = "p-3 hover:text-green-900";
       }
