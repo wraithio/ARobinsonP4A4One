@@ -589,9 +589,6 @@
   .end-2\.5 {
     inset-inline-end: calc(var(--spacing) * 2.5);
   }
-  .top-2 {
-    top: calc(var(--spacing) * 2);
-  }
   .top-2\.5 {
     top: calc(var(--spacing) * 2.5);
   }
@@ -886,17 +883,14 @@
   .min-h-screen {
     min-height: 100vh;
   }
-  .w-1 {
-    width: calc(var(--spacing) * 1);
-  }
   .w-1\/2 {
     width: calc(1/2 * 100%);
   }
   .w-1\/3 {
     width: calc(1/3 * 100%);
   }
-  .w-1\/6 {
-    width: calc(1/6 * 100%);
+  .w-2\/3 {
+    width: calc(2/3 * 100%);
   }
   .w-3 {
     width: calc(var(--spacing) * 3);
@@ -1606,9 +1600,6 @@
   .bg-gray-50 {
     background-color: var(--color-gray-50);
   }
-  .bg-gray-800 {
-    background-color: var(--color-gray-800);
-  }
   .bg-gray-800\/25 {
     background-color: color-mix(in oklab, var(--color-gray-800) 25%, transparent);
   }
@@ -1620,9 +1611,6 @@
   }
   .bg-red-500\/\[50\%\] {
     background-color: color-mix(in oklab, var(--color-red-500) 50%, transparent);
-  }
-  .bg-slate-600 {
-    background-color: var(--color-slate-600);
   }
   .bg-slate-600\/50 {
     background-color: color-mix(in oklab, var(--color-slate-600) 50%, transparent);
@@ -2614,11 +2602,6 @@
       gap: calc(var(--spacing) * 4);
     }
   }
-  .xs\:gap-6 {
-    @media (width >= 15rem) {
-      gap: calc(var(--spacing) * 6);
-    }
-  }
   .xs\:gap-8 {
     @media (width >= 15rem) {
       gap: calc(var(--spacing) * 8);
@@ -2769,14 +2752,14 @@
       width: calc(1/6 * 100%);
     }
   }
+  .lg\:w-\[20rem\] {
+    @media (width >= 64rem) {
+      width: 20rem;
+    }
+  }
   .lg\:w-auto {
     @media (width >= 64rem) {
       width: auto;
-    }
-  }
-  .lg\:w-fit {
-    @media (width >= 64rem) {
-      width: fit-content;
     }
   }
   .lg\:flex-row {
@@ -2824,11 +2807,6 @@
       padding: calc(var(--spacing) * 0);
     }
   }
-  .lg\:text-end {
-    @media (width >= 64rem) {
-      text-align: end;
-    }
-  }
   .lg\:text-left {
     @media (width >= 64rem) {
       text-align: left;
@@ -2843,14 +2821,19 @@
       }
     }
   }
+  .xl\:w-1\/2 {
+    @media (width >= 80rem) {
+      width: calc(1/2 * 100%);
+    }
+  }
   .xl\:w-1\/3 {
     @media (width >= 80rem) {
       width: calc(1/3 * 100%);
     }
   }
-  .xl\:w-2\/3 {
+  .xl\:w-fit {
     @media (width >= 80rem) {
-      width: calc(2/3 * 100%);
+      width: fit-content;
     }
   }
   .rtl\:space-x-reverse {

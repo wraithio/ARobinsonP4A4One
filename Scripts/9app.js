@@ -8,6 +8,7 @@ let result = async () => {
 
 submitBtn.addEventListener("click", async () =>{
     let arr = userInput.value.trim().split('')
+    eightball.classList.toggle("shake")
     if(userInput.value == "")
     {
         resultText.innerText = "Ask a question to begin."

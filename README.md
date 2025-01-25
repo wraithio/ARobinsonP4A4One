@@ -10,7 +10,7 @@ Requirements:
     Page Structure:
         Develop a 11-page application, with each page dedicated to a specific mini API endpoint challenge, and a home page with links to each page. (except for Guess It)
             Does not have to be in this order:
-                1.) Say hello, 2.) Adding, 3.) Asking Questions, 4.) Greater or Less 5.) Madlib 6.) Odd or Even 7.) ReverseIt (alphaNumeric) 8.) reverse it (numbersOnly) 9.) Magic 8 Ball 10.) Restaurant Picker 11.) Home Page
+                1.- Say hello, 2.- Adding, 3.- Asking Questions, 4.- Greater or Less 5.- Madlib 6.- Odd or Even 7.- ReverseIt (alphaNumeric) 8.- reverse it (numbersOnly) 9.- Magic 8 Ball 10.- Restaurant Picker 11.- Home Page
         Utilize Tailwind CSS for styling and layout, ensuring a cohesive and responsive design across all pages.
 ---
 

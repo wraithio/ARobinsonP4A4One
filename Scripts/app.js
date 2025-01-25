@@ -104,16 +104,37 @@ let selectMode = (button, text) => {
     if (modeBtns[i] == button) {
     } else {
       modeBtns[i].className = "border-2 border-solid rounded-xl hover:bg-white";
-    }
-  }
-
-  for (let i = 0; i < modeText.length; i++) {
-    if (modeText[i] == text) {
-    } else {
       modeText[i].className = "p-3 hover:text-green-900";
     }
   }
 }
+
+function myFunction(x) {
+  if (x.matches) { // If media query matches
+    for(let i = 0; i < modeBtns.length;i++)
+    {
+      modeBtns[i].href = "#footerBlock"
+      modeBtns[i].className = "bg-white rounded-xl border-2";
+      modeText[i].className = "text-green-900 p-3";
+
+    }
+  } else {
+    for(let i = 0; i < modeBtns.length;i++)
+      {
+        modeBtns[i].href = "#"
+        modeBtns[i].className = "border-2 border-solid rounded-xl hover:bg-white";
+        modeText[i].className = "p-3 hover:text-green-900";
+      }
+ 
+  }
+}
+
+var x = window.matchMedia("(max-width: 1024px)")
+myFunction(x);
+
+x.addEventListener("change", function() {
+  myFunction(x);
+}); 
 
 let displayDescription = (game) => {
   description.style.visibility = "visible";
